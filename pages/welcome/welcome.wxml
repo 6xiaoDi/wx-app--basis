@@ -1,6 +1,6 @@
 <!--pages/welcome/welcome.wxml-->
 
-<image style="width:200px;height:200px" src="../../images/avatar/1.png"></image>
+<image style="width:200rpx;height:200rpx" src="../../images/avatar/1.png"></image>
 <text>Hello, 小程序</text>
 <button></button>
 
