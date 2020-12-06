@@ -3,8 +3,8 @@
 <view class="container">
     <image class="avatar" src="/images/avatar/1.png"></image> 
     <text class="motto">Hello, 小程序</text>
-    <view>
-        <text>按钮</text>
+    <view class="journey-container">
+        <text class="journey">按钮</text>
     </view>
 </view>
 
