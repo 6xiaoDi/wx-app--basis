@@ -1,6 +1,8 @@
 <!--pages/welcome/welcome.wxml-->
 
-<image class="avatar" src="/images/avatar/1.png"></image> 
-<text>Hello, 小程序</text>
-<button>按钮</button>
+<view class="container">
+    <image class="avatar" src="/images/avatar/1.png"></image> 
+    <text>Hello, 小程序</text>
+    <button>按钮</button>
+</view>
 
