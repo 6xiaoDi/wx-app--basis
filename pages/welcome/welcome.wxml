@@ -2,7 +2,9 @@
 
 <view class="container">
     <image class="avatar" src="/images/avatar/1.png"></image> 
-    <text>Hello, 小程序</text>
-    <button>按钮</button>
+    <text class="motto">Hello, 小程序</text>
+    <view>
+        <text>按钮</text>
+    </view>
 </view>
 
