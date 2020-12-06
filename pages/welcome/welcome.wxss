@@ -26,7 +26,7 @@
     border-radius: 5px;
     text-align: center;
     margin-top: 200rpx;
-  }
+}
 
 .journey{
     font-size: 22rpx;
@@ -34,3 +34,8 @@
     line-height: 80rpx;
     font-weight: bold;
 }
+
+page{
+    background-color: #b3d4db;
+}
+  
