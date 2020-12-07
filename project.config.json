@@ -32,12 +32,14 @@
         "useIsolateContext": true,
         "useCompilerModule": true,
         "userConfirmedUseCompilerModuleSwitch": false,
+        "userConfirmedBundleSwitch": false,
         "packNpmManually": false,
         "packNpmRelationList": [],
-        "minifyWXSS": true
+        "minifyWXSS": true,
+        "bundle": false
     },
     "compileType": "miniprogram",
-    "libVersion": "2.0.4",
+    "libVersion": "2.13.1",
     "appid": "wx1c4daf8b9f9386be",
     "projectname": "test01",
     "debugOptions": {
