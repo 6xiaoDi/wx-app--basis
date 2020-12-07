@@ -1,2 +1,9 @@
-<!--pages/news/news.wxml-->
-<text>pages/news/news.wxml</text>
+<view>
+    <swiper>
+        <swiper-item>
+            <image src="/images/bestplayers.png"></image>
+        </swiper-item>
+        <swiper-item>Content2</swiper-item>
+        <swiper-item>Content3</swiper-item>
+    </swiper>
+</view>
