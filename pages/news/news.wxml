@@ -1,5 +1,5 @@
 <view>
-    <swiper indicator-dots autoplay vertical>
+    <swiper indicator-dots autoplay vertical circular>
         <swiper-item>
             <image src="/images/bestplayers.png"></image>
         </swiper-item>
