@@ -60,3 +60,21 @@ swiper image{
     line-height: 40rpx;
     letter-spacing: 2rpx;
 }
+
+.post-like{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 40rpx;
+}
+
+.post-like-image{
+    height: 32rpx;
+    width: 32rpx;
+    margin-right: 16rpx;
+}
+
+.post-like-font{
+    margin-right: 20rpx;
+    font-size: 26rpx;
+}
