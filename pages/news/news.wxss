@@ -21,10 +21,7 @@ swiper image{
 }
 
 .post-author-date{
-    /* margin-top: 10rpx;
-    margin-bottom: 20rpx;
-    margin-left: 10rpx; */
-    /* 以上简写 上 右 下 左*/
+    /*上 右 下 左*/
     margin: 10rpx 0 20rpx 10rpx;
     display: flex;
     flex-direction: row;
@@ -34,10 +31,17 @@ swiper image{
 .post-author{
     width: 60rpx;
     height: 60rpx;
-    /* vertical-align: middle; */
 }
 
 .post-data{
     margin-left: 20rpx;
-    /* vertical-align: middle; */
+    font-size: 26rpx;
+}
+
+.post-title{
+    font-size: 34rpx;
+    font-weight: 600;
+    margin-bottom: 20rpx;
+    margin-left: 20rpx;
+    color:#333;
 }
