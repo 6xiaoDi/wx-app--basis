@@ -51,3 +51,10 @@ swiper image{
     height: 340rpx;
     margin-bottom: 30rpx;
 }
+
+.post-content{
+    color: #666;
+    font-size: 28rpx;
+    margin-bottom: 20rpx;
+    margin-left: 20rpx;
+}
