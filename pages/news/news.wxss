@@ -33,3 +33,8 @@ swiper image{
     height: 60rpx;
     vertical-align: middle;
 }
+
+.post-data{
+    margin-left: 20rpx;
+    vertical-align: middle;
+}
