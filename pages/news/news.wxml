@@ -11,7 +11,7 @@
         </swiper-item>
     </swiper>
 
-    <view>
+    <view class="post-container">
         <view>
             <image src="/images/avatar/3.png"></image>
             <text>Nov 20 2020</text>
