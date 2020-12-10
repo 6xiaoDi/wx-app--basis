@@ -19,3 +19,17 @@ swiper image{
     border-bottom: 1px solid #ededed;
     padding-bottom: 10rpx;
 }
+
+.post-author-date{
+    /* margin-top: 10rpx;
+    margin-bottom: 20rpx;
+    margin-left: 10rpx; */
+    /* 以上简写 上 右 下 左*/
+    margin: 10rpx 0 20rpx 10rpx;
+}
+
+.post-author{
+    width: 60rpx;
+    height: 60rpx;
+    vertical-align: middle;
+}
