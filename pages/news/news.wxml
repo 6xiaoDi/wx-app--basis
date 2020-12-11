@@ -17,7 +17,7 @@
             <text class="post-date">Nov 20 2020</text>
         </view>
 
-        <text class="post-title">2020LPL夏季赛季后赛观赛指南</text>
+        <text class="post-title">{{a}}</text>
 
         <image class="post-image" src="/images/lpl.png"></image>
 
