@@ -5,7 +5,9 @@ Page({
      * 页面的初始数据
      */
     data: {
-        a:"2020LPL夏季赛季后赛观赛指南"
+        a:"2020LPL夏季赛季后赛观赛指南",
+        b:"0000",
+        c:"0000"
     },
 
     /**
@@ -13,8 +15,7 @@ Page({
      */
     onLoad: function (options) {
         this.setData({
-            b:"2021LPL",
-            c:"12345"
+            b:"2021LPL"
         })
     },
 
