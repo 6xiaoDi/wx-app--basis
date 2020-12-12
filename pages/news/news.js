@@ -13,7 +13,8 @@ Page({
      */
     onLoad: function (options) {
         this.setData({
-            b:"2021LPL"
+            b:"2021LPL",
+            c:"12345"
         })
     },
 
@@ -21,7 +22,7 @@ Page({
      * 生命周期函数--监听页面初次渲染完成
      */
     onReady: function () {
-
+        console.log(this.data);
     },
 
     /**
