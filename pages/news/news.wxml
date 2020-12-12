@@ -17,7 +17,7 @@
             <text class="post-date">Nov 20 2020</text>
         </view>
 
-        <text class="post-title">{{a}}</text>
+        <text class="post-title">{{b}}</text>
 
         <image class="post-image" src="/images/lpl.png"></image>
 
