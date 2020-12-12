@@ -13,23 +13,23 @@
 
     <view class="post-container">
         <view class="post-author-date">
-            <image class="post-author" src="/images/avatar/3.png"></image>
-            <text class="post-date">Nov 20 2020</text>
+            <image class="post-author" src="{{avatar}}"></image>
+            <text class="post-date">{{date}}</text>
         </view>
 
-        <text class="post-title">{{b}}</text>
+        <text class="post-title">{{title}}</text>
 
-        <image class="post-image" src="/images/lpl.png"></image>
+        <image class="post-image" src="{{imgSrc}}"></image>
 
-        <text class="post-content">8月9号，LPL常规赛收官之战结束，在事关季后赛轮次的比赛中关键对局中，SN战胜了FPX，为本赛季常规赛画上句号。进入季后赛的战队依次为，TES、JDG、IG、SN、V5、LGD、WE、FPX</text>
+        <text class="post-content">{{content}}</text>
 
         <view class="post-like">
             <!-- <image class="post-like-image" src="/images/icon/chat.png"></image> -->
             <l-icon name="favor" size="28" color="#666" class="post-like-image"></l-icon>
-            <text class="post-like-font">92</text>
+            <text class="post-like-font">{{collection}}</text>
             <!-- <image class="post-like-image" src="/images/icon/view.png"></image> -->
             <l-icon name="eye" size="32" color="#666" class="post-like-image"></l-icon>
-            <text class="post-like-font">102</text>
+            <text class="post-like-font">{{reading}}</text>
         </view>
     </view>
 </view>
