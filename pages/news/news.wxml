@@ -13,8 +13,8 @@
 
     <view class="post-container">
         <view class="post-author-date">
-            <image class="post-author" src="{{avatar}}"></image>
-            <text wx:if="{{flag}}" class="post-date">{{date}}</text>
+            <image wx:if="{{flag}}" class="post-author" src="{{avatar}}"></image>
+            <text wx:else class="post-date">{{date}}</text>
         </view>
 
         <text class="post-title">{{title}}</text>
