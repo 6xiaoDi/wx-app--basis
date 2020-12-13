@@ -6,7 +6,7 @@ Page({
      */
     data: {
         a:"2020LPL夏季赛季后赛观赛指南",
-        flag:true
+        flag:false
     },
 
     /**
