@@ -12,7 +12,7 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-        console.log('onLoad');
+        // console.log('onLoad');
         let content =   [{
             title: "2020LPL夏季赛季后赛观赛指南",
             content: "8月9号，LPL常规赛收官之战结束，在事关季后赛轮次的比赛中关键对局中，SN战胜了FPX，为本赛季常规赛画上句号。进入季后赛的战队依次为，TES、JDG、IG、SN、V5、LGD、WE、FPX",
@@ -49,28 +49,28 @@ Page({
      * 生命周期函数--监听页面初次渲染完成
      */
     onReady: function () {
-        console.log('onReady');
+        // console.log('onReady');
     },
 
     /**
      * 生命周期函数--监听页面显示
      */
     onShow: function () {
-        console.log('onShow');
+        // console.log('onShow');
     },
 
     /**
      * 生命周期函数--监听页面隐藏
      */
     onHide: function () {
-        console.log('onHide');
+        // console.log('onHide');
     },
 
     /**
      * 生命周期函数--监听页面卸载
      */
     onUnload: function () {
-        console.log('onUnload');
+        // console.log('onUnload');
     },
 
     /**
