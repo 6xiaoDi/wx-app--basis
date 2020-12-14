@@ -16,18 +16,18 @@ Page({
     },
 
     onViewTap:function(params) {
-        console.log("onViewTap");
+        // console.log("onViewTap");
     },
 
     onTextTap:function(params) {
-        console.log("onTextTap");
+        // console.log("onTextTap");
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-        console.log("Welcome =>  onLoad");
+        // console.log("Welcome =>  onLoad");
     },
 
     /**
@@ -48,7 +48,7 @@ Page({
      * 生命周期函数--监听页面隐藏
      */
     onHide: function () {
-        console.log("Welcome =>  onHide");
+        // console.log("Welcome =>  onHide");
     },
 
     /**
