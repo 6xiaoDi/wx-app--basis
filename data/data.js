@@ -98,6 +98,6 @@ let postList = [
     },
 ]
 
-module.exports = {
+export {
   postList
 }

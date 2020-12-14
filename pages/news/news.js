@@ -1,7 +1,7 @@
 // pages/news/news.js
 
-let postData = require("../../data/data.js")
-console.log(postData)
+import {postList} from "../../data/data.js"
+console.log(postList);
 
 Page({
 
