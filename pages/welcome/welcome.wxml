@@ -5,7 +5,7 @@
     <l-avatar class="l-avatar" placement="bottom" open-data="{{['userAvatarUrl','userNickName']}}" size="180"/>
     <text class="motto">Hello, 小程序</text>
     <view catch:tap="onViewTap" class="journey-container">
-        <text bind:tap="onTextTap" class="journey">新闻首页</text>
+        <text catch:tap="onTextTap" class="journey">新闻首页</text>
     </view>
 </view>
 
