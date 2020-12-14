@@ -8,6 +8,11 @@ Page({
 
     },
 
+    onTap:function(params) {
+        //  跳转页面
+        console.log("跳转页面");
+    },
+
     /**
      * 生命周期函数--监听页面加载
      */
