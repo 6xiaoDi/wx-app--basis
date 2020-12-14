@@ -1,4 +1,4 @@
-var postList = [
+let postList = [
   {
     title: "2020LPL夏季赛季后赛观赛指南",
     content: "8月9号，LPL常规赛收官之战结束，在事关季后赛轮次的比赛中关键对局中，SN战胜了FPX，为本赛季常规赛画上句号。进入季后赛的战队依次为，TES、JDG、IG、SN、V5、LGD、WE、FPX",
@@ -98,15 +98,6 @@ var postList = [
     },
 ]
 
-export {
+module.exports = {
   postList
 }
-
-// module.exports = {
-//   postList:local_database
-// }
-
-// javascript 模块
-// this.setData
-// 导入 导出
-// JS 模块导入导出

@@ -1,4 +1,8 @@
 // pages/news/news.js
+
+let postData = require("../../data/data.js")
+console.log(postData)
+
 Page({
 
     /**
