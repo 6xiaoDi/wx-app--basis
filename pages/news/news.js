@@ -11,6 +11,10 @@ Page({
         a:"2020LPL夏季赛季后赛观赛指南"
     },
 
+    onMaxImage:function (event) {
+        console.log('onMaxImage');
+    },
+
     /**
      * 生命周期函数--监听页面加载
      */
