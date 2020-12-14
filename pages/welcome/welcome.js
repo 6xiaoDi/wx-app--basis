@@ -10,8 +10,8 @@ Page({
 
     onTap:function(params) {
         //  跳转页面
-        wx.navigateTo({
-          url: '/pages/news/news',
+        wx.redirectTo({
+        url: '/pages/news/news',
         })
     },
 
