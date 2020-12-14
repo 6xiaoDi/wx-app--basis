@@ -14,7 +14,7 @@
     <block wx:for="{{postList}}" wx:key="postId">
         <view bind:tap="onToDetail" class="post-container">
             <view class="post-author-date">
-                <image bind:tap="onMaxImage" class="post-author" src="{{item.avatar}}"></image>
+                <image catch:tap="onMaxImage" class="post-author" src="{{item.avatar}}"></image>
                 <text class="post-date">{{item.date}}</text>
             </view>
 
