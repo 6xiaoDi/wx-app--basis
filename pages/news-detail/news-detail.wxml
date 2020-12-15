@@ -1,2 +1,14 @@
-<!--pages/news-detail/news-detail.wxml-->
-<text>pages/news-detail/news-detail.wxml</text>
+<view class="container">
+    <image src=""></image> 
+    <view>
+        <image></image>
+        <text></text>
+        <text>发表于</text>
+        <text></text>
+    </view>
+    <view>
+        <image></image>
+        <image></image>
+    </view>
+    <text></text>
+</view>
