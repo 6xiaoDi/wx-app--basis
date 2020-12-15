@@ -1,10 +1,10 @@
 <view class="container">
-    <image src="/images/bestplayers.png"></image> 
-    <view>
-        <image src="/images/avatar/2.png"></image>
-        <text>作者123</text>
-        <text>发表于</text>
-        <text>16小时前</text>
+    <image class="head-image" src="/images/bestplayers.png"></image> 
+    <view class="author-date">
+        <image class="avatar" src="/images/avatar/2.png"></image>
+        <text class="author">作者123</text>
+        <text class="const-text">发表于</text>
+        <text class="date">16小时前</text>
     </view>
     <text>LPL夏季赛最佳阵容</text>
     <view>
