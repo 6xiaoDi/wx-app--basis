@@ -45,17 +45,23 @@
     font-size: 36rpx;
     font-weight: 700;
     margin-top: 30rpx;
+    letter-spacing: 2px;
     color:#4b556c;
 }
 
 .tool{
     margin-top: 20rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .circle{
-    float: right;
-    margin-right: 40rpx;
-    vertical-align: middle;
+    display: flex;
+    width: 660rpx;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 .circle-img{
@@ -69,10 +75,7 @@
     width:660rpx;
     height:1px;
     background-color: #e5e5e5;
-    vertical-align: middle;
-    position: relative;
-    top: 46rpx;
-    margin:0 auto;
+    position: absolute;
     z-index: -99;
 }
 
