@@ -64,12 +64,14 @@
     justify-content: flex-end;
 }
 
-.circle-img{
+.circle image {
     width:90rpx;
     height: 90rpx;
-    margin-left: 30rpx;
 }
 
+.share-img {
+    margin-right: 30rpx;
+}
 
 .horizon{
     width:660rpx;

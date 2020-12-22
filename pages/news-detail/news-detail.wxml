@@ -9,8 +9,8 @@
     <text class="title">LPL夏季赛最佳阵容</text>
     <view class="tool">
         <view class="circle">
-            <image class="circle-img" src="/images/icon/share.png"></image>
-            <image class="circle-img" src="/images/icon/collection.png"></image>
+            <image class="share-img" src="/images/icon/share.png"></image>
+            <image src="/images/icon/collection.png"></image>
         </view>
         <view class="horizon"></view>
     </view>
