@@ -12,7 +12,7 @@
     </swiper>
 
     <block wx:for="{{postList}}" wx:key="postId">
-        <view data-id="{{item.postId}}" bind:tap="onToDetail" class="post-container">
+        <view data-id="{{item.postId}}" data-postId="{{item.postId}}"  data-post-id="{{item.postId}}" bind:tap="onToDetail" class="post-container">
             <view class="post-author-date">
                 <image catch:tap="onMaxImage" class="post-author" src="{{item.avatar}}"></image>
                 <text class="post-date">{{item.date}}</text>

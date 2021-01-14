@@ -25,6 +25,7 @@ Page({
     },
 
     onToDetail:function (event){
+        console.log(event);
         wx.navigateTo({
           url: '/pages/news-detail/news-detail',
         })
