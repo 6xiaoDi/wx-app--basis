@@ -1,11 +1,14 @@
 // pages/news-detail/news-detail.js
+
+import {postList} from '../../data/data.js'
+
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-
+        postData:{}
     },
 
     /**
@@ -13,6 +16,10 @@ Page({
      */
     onLoad: function (options) {
         console.log(options)
+        const postData = postList[options.pid]
+        this.setData({
+            postData
+        })
     },
 
     /**
