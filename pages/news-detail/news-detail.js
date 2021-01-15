@@ -11,6 +11,7 @@ Page({
      */
     data: {
         postData:{},
+        collected:false,
         _pid:null,
     },
 
@@ -29,6 +30,10 @@ Page({
         // 默认未收藏
         const postsCollected = {}
         postsCollected[this.data._pid] = true;
+        this.setData({
+            collected:!this.data.collected
+        })
+
         wx.setStorageSync('posts_collected', postsCollected);
     },
 
