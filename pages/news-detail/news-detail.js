@@ -1,6 +1,8 @@
 // pages/news-detail/news-detail.js
 
 import {postList} from '../../data/data.js'
+const app = getApp()
+console.log(app);
 
 Page({
 
