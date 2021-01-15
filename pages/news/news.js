@@ -25,9 +25,9 @@ Page({
     },
 
     onToDetail:function (event){
-        console.log(event);
+        const pid = event.currentTarget.dataset.postId
         wx.navigateTo({
-          url: '/pages/news-detail/news-detail',
+          url: '/pages/news-detail/news-detail?pid=' + pid,
         })
     },
 
