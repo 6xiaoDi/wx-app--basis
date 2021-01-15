@@ -70,7 +70,7 @@
 }
 
 .share-img {
-    margin-right: 30rpx;
+    margin-left: 30rpx;
 }
 
 .horizon{

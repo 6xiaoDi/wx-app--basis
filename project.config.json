@@ -70,12 +70,7 @@
                 {
                     "name": "pages/news-detail/news-detail",
                     "pathName": "pages/news-detail/news-detail",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "pages/news-detail/news-detail",
-                    "pathName": "pages/news-detail/news-detail",
+                    "query": "pid=0",
                     "scene": null
                 }
             ]
