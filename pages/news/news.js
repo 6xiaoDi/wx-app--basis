@@ -19,6 +19,13 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
+        wx.setStorageSync('flag', true);
+        wx.setStorageSync('flag', false);
+        wx.setStorageSync('flag1', 1);
+
+        const flag = wx.getStorageSync('flag1');
+        console.log(flag);
+
         this.setData({
             postList
         });
