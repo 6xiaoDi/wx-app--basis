@@ -9,7 +9,7 @@
     <text class="title">{{postData.title}}</text>
     <view class="tool">
         <view class="circle">
-            <image src="/images/icon/collection-anti.png"></image>
+            <image bind:tap='onCollect' src="/images/icon/collection-anti.png"></image>
             <image class="share-img" src="/images/icon/share.png"></image>
         </view>
         <view class="horizon"></view>

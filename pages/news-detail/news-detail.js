@@ -10,18 +10,26 @@ Page({
      * 页面的初始数据
      */
     data: {
-        postData:{}
+        postData:{},
+        _pid:null,
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-        console.log(options)
         const postData = postList[options.pid]
+        this.data._pid = options.pid
         this.setData({
             postData
         })
+    },
+
+    onCollect(event) {
+        // 默认未收藏
+        const postsCollected = {}
+        postsCollected[this.data._pid] = true;
+        wx.setStorageSync('posts_collected', postsCollected);
     },
 
     /**
