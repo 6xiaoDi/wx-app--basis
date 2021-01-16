@@ -53,8 +53,11 @@ Page({
 
         wx.showModal({
           title:"这是一个提示框",
-          cancelText:'A',
-          confirmText:'B'
+          //   cancelText:'A',
+          //   confirmText:'B'
+          success(res) {
+              console.log(res)
+          }
         })
     },
 
