@@ -22,7 +22,11 @@ Page({
         const postData = postList[options.pid]
         this.data._pid = options.pid
         const postCollected = wx.getStorageSync('posts_collected')
-        const collected = postCollected[this.data._pid]
+        let collected = postCollected[this.data._pid]
+
+        if (collected === undefined) {
+            collected = false;
+        }
 
         this.setData({
             postData,
