@@ -46,9 +46,15 @@ Page({
 
         wx.setStorageSync('posts_collected', postsCollected);
 
-        wx.showToast({
-          title: this.data.collected? '收藏成功' : '取消收藏',
-          duration:3000
+        // wx.showToast({
+        //   title: this.data.collected? '收藏成功' : '取消收藏',
+        //   duration:3000
+        // })
+
+        wx.showModal({
+          title:"这是一个提示框",
+          cancelText:'A',
+          confirmText:'B'
         })
     },
 
