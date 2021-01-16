@@ -78,6 +78,12 @@ Page({
         }
     },
 
+    onMusic(event) {
+        const mgr =  wx.getBackgroundAudioManager()
+        mgr.src = postList[0].music.url
+        mgr.title = postList[0].music.title
+    },
+
     /**
      * 生命周期函数--监听页面初次渲染完成
      */
