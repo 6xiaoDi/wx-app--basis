@@ -36,29 +36,39 @@ Page({
         })
     },
 
-    onCollect(event) {
+    async onCollect(event) {
         // 默认未收藏
-        const postsCollected = this.data._postsCollected;
-        postsCollected[this.data._pid] = !this.data.collected;
-        this.setData({
-            collected:!this.data.collected
-        })
+        // const postsCollected = this.data._postsCollected;
+        // postsCollected[this.data._pid] = !this.data.collected;
+        // this.setData({
+        //     collected:!this.data.collected
+        // })
 
-        wx.setStorageSync('posts_collected', postsCollected);
+        // wx.setStorageSync('posts_collected', postsCollected);
 
         // wx.showToast({
         //   title: this.data.collected? '收藏成功' : '取消收藏',
         //   duration:3000
         // })
 
-        wx.showModal({
+        const res = await wx.showModal({
           title:"这是一个提示框",
           //   cancelText:'A',
           //   confirmText:'B'
-          success(res) {
-              console.log(res)
-          }
+            //   success(res) {
+            //       console.log(res)
+            //   }
         })
+
+        if (res.confirm) {
+            const postsCollected = this.data._postsCollected;
+            postsCollected[this.data._pid] = !this.data.collected;
+            this.setData({
+                collected:!this.data.collected
+            })
+    
+            wx.setStorageSync('posts_collected', postsCollected);
+        }
     },
 
     /**
