@@ -47,7 +47,7 @@ Page({
         wx.setStorageSync('posts_collected', postsCollected);
 
         wx.showToast({
-          title: this.data.collected? '取消收藏' : '收藏成功',
+          title: this.data.collected? '收藏成功' : '取消收藏',
           duration:3000
         })
     },
