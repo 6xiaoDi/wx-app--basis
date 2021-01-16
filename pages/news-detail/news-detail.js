@@ -13,6 +13,7 @@ Page({
         postData:{},
         collected:false,
         _pid:null,
+        _postsCollected:{}
     },
 
     /**
@@ -22,6 +23,7 @@ Page({
         const postData = postList[options.pid]
         this.data._pid = options.pid
         const postCollected = wx.getStorageSync('posts_collected')
+        this.data._postsCollected = postCollected;
         let collected = postCollected[this.data._pid]
 
         if (collected === undefined) {
@@ -36,7 +38,7 @@ Page({
 
     onCollect(event) {
         // 默认未收藏
-        const postsCollected = {}
+        const postsCollected = this.data._postsCollected;
         postsCollected[this.data._pid] = !this.data.collected;
         this.setData({
             collected:!this.data.collected
