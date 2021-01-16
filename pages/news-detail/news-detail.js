@@ -36,6 +36,13 @@ Page({
         })
     },
 
+    async onShare(event) {
+        let res = await wx.showActionSheet({
+          itemList: ['分享到QQ','分享到微信','分享到微博'],
+        })
+        console.log(res);
+    },
+
     async onCollect(event) {
         // 默认未收藏
         // const postsCollected = this.data._postsCollected;

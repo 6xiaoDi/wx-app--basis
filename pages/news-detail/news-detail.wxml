@@ -11,7 +11,7 @@
         <view class="circle">
             <image wx:if="{{collected}}" bind:tap='onCollect' src="/images/icon/collection.png"></image>
             <image wx:else bind:tap='onCollect' src="/images/icon/collection-anti.png"></image>
-            <image class="share-img" src="/images/icon/share.png"></image>
+            <image bind:tap="onShare" class="share-img" src="/images/icon/share.png"></image>
         </view>
         <view class="horizon"></view>
     </view>
