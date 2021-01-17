@@ -14,7 +14,8 @@ Page({
         collected:false,
         isPlaying:false,
         _pid:null,
-        _postsCollected:{}
+        _postsCollected:{},
+        _mgr:null
     },
 
     /**
@@ -35,6 +36,11 @@ Page({
             postData,
             collected
         })
+
+        const mgr = wx.getBackgroundAudioManager()
+        this.data._mgr = mgr
+        mgr.onPlay(this.onMusicStart)
+        mgr.onPause(this.onMusicStop)
     },
 
     async onShare(event) {
@@ -80,20 +86,20 @@ Page({
     },
 
     onMusicStart(event) {
-        const mgr =  wx.getBackgroundAudioManager()
+        const mgr = this.data._mgr
         const music = postList[this.data._pid].music
 
         mgr.src = music.url
         mgr.title = music.title
         mgr.coverImgUrl = music.coverImg
-        
+
         this.setData({
             isPlaying:true
         })
     },
 
     onMusicStop(event) {
-        const mgr =  wx.getBackgroundAudioManager()
+        const mgr =  this.data._mgr
         mgr.stop();
         this.setData({
             isPlaying:false
