@@ -12,6 +12,7 @@ Page({
     data: {
         postData:{},
         collected:false,
+        isPlaying:false,
         _pid:null,
         _postsCollected:{}
     },
@@ -80,8 +81,11 @@ Page({
 
     onMusic(event) {
         const mgr =  wx.getBackgroundAudioManager()
-        mgr.src = postList[0].music.url
-        mgr.title = postList[0].music.title
+        mgr.src = postList[this.data._pid].music.url
+        mgr.title = postList[this.data._pid].music.title
+        this.setData({
+            isPlaying:!this.data.isPlaying
+        })
     },
 
     /**
