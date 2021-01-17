@@ -10,7 +10,7 @@ Page({
 
     onTap:function(params) {
         //  跳转页面
-        wx.navigateTo({
+        wx.switchTab({
         url: '/pages/news/news',
         })
     },
