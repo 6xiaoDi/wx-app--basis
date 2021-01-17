@@ -2,11 +2,27 @@
     "pages": [
         "pages/welcome/welcome",
         "pages/news/news",
-        "pages/news-detail/news-detail"
+        "pages/news-detail/news-detail",
+        "pages/movies/movies"
     ],
     "window": {
         "navigationBarBackgroundColor": "#C22A1E"
     },
     "sitemapLocation": "sitemap92.json",
-    "requiredBackgroundModes": ["audio", "location"]
+    "requiredBackgroundModes": [
+        "audio",
+        "location"
+    ],
+    "tabBar": {
+        "list": [
+            {
+                "text": "阅读",
+                "pagePath": "pages/news/news"
+            },
+            {
+                "text": "电影",
+                "pagePath": "pages/movies/movies"
+            }
+        ]
+    }
 }
