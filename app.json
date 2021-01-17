@@ -14,6 +14,7 @@
         "location"
     ],
     "tabBar": {
+        "borderStyle": "white",
         "color": "#999",
         "selectedColor": "#333",
         "list": [
