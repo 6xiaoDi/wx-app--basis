@@ -17,11 +17,15 @@
         "list": [
             {
                 "text": "阅读",
-                "pagePath": "pages/news/news"
+                "pagePath": "pages/news/news",
+                "iconPath": "/images/tab/yuedu.png",
+                "selectedIconPath": "/images/tab/yuedu_hl.png"
             },
             {
                 "text": "电影",
-                "pagePath": "pages/movies/movies"
+                "pagePath": "pages/movies/movies",
+                "iconPath": "/images/tab/dianying.png",
+                "selectedIconPath": "/images/tab/dianying_hl.png"
             }
         ]
     }
