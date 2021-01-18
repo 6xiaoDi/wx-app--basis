@@ -1,2 +1,1 @@
-<!--components/news/index.wxml-->
-<text>components/news/index.wxml</text>
+<h2>这是一个自定义组件</h2>
