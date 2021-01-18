@@ -2,7 +2,6 @@
 
 import {postList} from '../../data/data.js'
 const app = getApp()
-console.log(app);
 
 Page({
 
@@ -34,7 +33,8 @@ Page({
 
         this.setData({
             postData,
-            collected
+            collected,
+            isPlaying:app.gIsPlayingMusic
         })
 
         const mgr = wx.getBackgroundAudioManager()
@@ -93,6 +93,8 @@ Page({
         mgr.title = music.title
         mgr.coverImgUrl = music.coverImg
 
+        app.gIsPlayingMusic = true;
+
         this.setData({
             isPlaying:true
         })
@@ -101,6 +103,7 @@ Page({
     onMusicStop(event) {
         const mgr =  this.data._mgr
         mgr.stop();
+        app.gIsPlayingMusic = false;
         this.setData({
             isPlaying:false
         })
