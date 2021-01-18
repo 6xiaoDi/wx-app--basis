@@ -34,7 +34,7 @@ Page({
         this.setData({
             postData,
             collected,
-            isPlaying:app.gIsPlayingMusic
+            isPlaying:this.currentMusicIsPlaying()
         })
 
         const mgr = wx.getBackgroundAudioManager()
@@ -85,6 +85,10 @@ Page({
         }
     },
 
+    currentMusicIsPlaying() {
+        return (app.gIsPlayingMusic && app.gIsPlayingMusicId === this.data._pid)
+    },
+
     onMusicStart(event) {
         const mgr = this.data._mgr
         const music = postList[this.data._pid].music
@@ -93,7 +97,8 @@ Page({
         mgr.title = music.title
         mgr.coverImgUrl = music.coverImg
 
-        app.gIsPlayingMusic = true;
+        app.gIsPlayingMusic = true
+        app.gIsPlayingMusicId = this.data._pid
 
         this.setData({
             isPlaying:true
@@ -102,8 +107,9 @@ Page({
 
     onMusicStop(event) {
         const mgr =  this.data._mgr
-        mgr.stop();
-        app.gIsPlayingMusic = false;
+        mgr.stop()
+        app.gIsPlayingMusic = false
+        app.gIsPlayingMusicId = -1
         this.setData({
             isPlaying:false
         })
