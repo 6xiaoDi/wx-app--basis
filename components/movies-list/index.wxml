@@ -1,1 +1,7 @@
-movies-list
+<view class="container">
+    <view>
+        <text>正在热议</text>
+        <text>更多</text>
+    </view>
+    <movie/>
+</view>
