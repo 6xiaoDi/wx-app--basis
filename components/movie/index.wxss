@@ -16,3 +16,15 @@
     overflow: hidden;
     word-break: break-all;
 }
+
+.rate-container{
+    margin-top: 6rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.score{
+   margin-left: 20rpx; 
+   font-size: 24rpx;
+}
