@@ -1,1 +1,3 @@
-<movies-list></movies-list>
+<movies-list class="movie-list"></movies-list>
+<movies-list class="movie-list"></movies-list>
+<movies-list class="movie-list"></movies-list>
