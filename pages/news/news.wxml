@@ -10,7 +10,7 @@
             <image data-post-id="4" bind:tap="onToDetail" src="/images/jumpfly.png"></image>
         </swiper-item>
     </swiper>
-    <news/>
+    <news text="Zzzz"/>
 
     <block wx:for="{{postList}}" wx:key="postId">
         <view data-post-id="{{item.postId}}" bind:tap="onToDetail" class="post-container">
