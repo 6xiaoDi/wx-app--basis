@@ -1,1 +1,1 @@
-<text>pages/movies/movies.wxml</text>
+<movies-list></movies-list>
