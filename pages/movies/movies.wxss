@@ -1,5 +1,6 @@
 .movie-list{
     margin-bottom: 30rpx;
+    background-color: teal !important;
 }
 
 page{
