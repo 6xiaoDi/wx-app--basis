@@ -5,7 +5,8 @@ Page({
      * 页面的初始数据
      */
     data: {
-
+        inTheaters:[],
+        comingSoon:[]
     },
 
     /**
@@ -14,8 +15,10 @@ Page({
     onLoad: function (options) {
         wx.request({
             url: 'http://t.talelin.com/v2/movie/in_theaters?start=0&count=3',
-            success:(res)=>{
-                console.log(res)
+            success(res){
+                this.setData({
+                    inTheaters:res.data.subjects
+                })
             }
           }) 
     },
