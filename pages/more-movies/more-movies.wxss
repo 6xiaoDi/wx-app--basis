@@ -1,11 +1,11 @@
 .container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
     padding: 30rpx 28rpx;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .movie{
-    margin-bottom: 30rpx;
+    margin-bottom: 300rpx;
 }
