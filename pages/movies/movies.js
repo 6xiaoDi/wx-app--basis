@@ -15,7 +15,8 @@ Page({
     onLoad: function (options) {
         wx.request({
             url: 'http://t.talelin.com/v2/movie/in_theaters?start=0&count=3',
-            success(res){
+            success:(res)=>{
+                console.log(res.data.subjects)
                 this.setData({
                     inTheaters:res.data.subjects
                 })

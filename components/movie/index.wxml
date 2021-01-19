@@ -1,6 +1,6 @@
 <view class="container">
     <image class="poster" src="/images/0.jpg"></image>
-    <text class="title">肖生克救赎</text>
+    <text class="title">{{movie.title}}</text>
     <view class="rate-container">
         <l-rate disabled="{{true}}" size="22" score="3"/>
         <text class="score">3.0</text>
