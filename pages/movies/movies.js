@@ -6,7 +6,8 @@ Page({
      */
     data: {
         inTheaters:[],
-        comingSoon:[]
+        comingSoon:[],
+        top250:[]
     },
 
     /**
@@ -21,7 +22,25 @@ Page({
                     inTheaters:res.data.subjects
                 })
             }
-          }) 
+        }) 
+        wx.request({
+        url: 'http://t.talelin.com/v2/movie/coming_soon?start=0&count=3',
+        success:(res)=>{
+            console.log(res.data.subjects)
+            this.setData({
+                comingSoon:res.data.subjects
+            })
+        }
+        }) 
+        wx.request({
+        url: 'http://t.talelin.com/v2/movie/top250?start=0&count=3',
+        success:(res)=>{
+            console.log(res.data.subjects)
+            this.setData({
+                top250:res.data.subjects
+            })
+        }
+        }) 
     },
 
     /**
