@@ -1,4 +1,5 @@
 // pages/movies/movies.js
+const app = getApp();
 Page({
 
     /**
@@ -15,7 +16,7 @@ Page({
      */
     onLoad: function (options) {
         wx.request({
-            url: 'http://t.talelin.com/v2/movie/in_theaters?start=0&count=3',
+            url: app.gBaseUrl + 'in_theaters?start=0&count=3',
             success:(res)=>{
                 console.log(res.data.subjects)
                 this.setData({
@@ -24,7 +25,7 @@ Page({
             }
         }) 
         wx.request({
-        url: 'http://t.talelin.com/v2/movie/coming_soon?start=0&count=3',
+        url: app.gBaseUrl + 'coming_soon?start=0&count=3',
         success:(res)=>{
             console.log(res.data.subjects)
             this.setData({
@@ -33,7 +34,7 @@ Page({
         }
         }) 
         wx.request({
-        url: 'http://t.talelin.com/v2/movie/top250?start=0&count=3',
+        url: app.gBaseUrl + 'top250?start=0&count=3',
         success:(res)=>{
             console.log(res.data.subjects)
             this.setData({
