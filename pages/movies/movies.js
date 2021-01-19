@@ -16,32 +16,42 @@ Page({
      */
     onLoad: function (options) {
         wx.request({
-            url: app.gBaseUrl + 'in_theaters?start=0&count=3',
+            url: app.gBaseUrl + 'in_theaters',
+            data:{
+              start:0,
+              count:3
+            },
             success:(res)=>{
-                console.log(res.data.subjects)
-                this.setData({
-                    inTheaters:res.data.subjects
-                })
+              this.setData({
+                inTheaters:res.data.subjects
+              })
             }
-        }) 
-        wx.request({
-        url: app.gBaseUrl + 'coming_soon?start=0&count=3',
-        success:(res)=>{
-            console.log(res.data.subjects)
-            this.setData({
+          })   
+        
+          wx.request({
+            url: app.gBaseUrl + 'coming_soon',
+            data:{
+              start:0,
+              count:3
+            },
+            success:(res)=>{
+              this.setData({
                 comingSoon:res.data.subjects
-            })
-        }
-        }) 
-        wx.request({
-        url: app.gBaseUrl + 'top250?start=0&count=3',
-        success:(res)=>{
-            console.log(res.data.subjects)
-            this.setData({
+              })
+            }
+          })
+          wx.request({
+            url: app.gBaseUrl + 'top250',
+            data:{
+              start:0,
+              count:3
+            },
+            success:(res)=>{
+              this.setData({
                 top250:res.data.subjects
-            })
-        }
-        }) 
+              })
+            }
+          })
     },
 
     /**
