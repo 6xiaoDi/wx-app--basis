@@ -7,26 +7,27 @@ Page({
      */
     data: {
         movies:[],
+        _type:""
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-      const type = options.type
-        wx.request({
-            url: app.gBaseUrl + type,
-            data:{
-              start:0,
-              count:12
-            },
-            success:(res)=>{
-              console.log(res)  
-              this.setData({
-                movies:res.data.subjects
-              })
-            }
-          })   
+      this.data._type = options.type
+      wx.request({
+          url: app.gBaseUrl + this.data._type,
+          data:{
+            start:0,
+            count:12
+          },
+          success:(res)=>{
+            console.log(res)  
+            this.setData({
+              movies:res.data.subjects
+            })
+          }
+      })   
     },
 
     /**
@@ -68,7 +69,19 @@ Page({
      * 页面上拉触底事件的处理函数
      */
     onReachBottom: function () {
-
+      wx.request({
+          url: app.gBaseUrl + this.data._type,
+          data:{
+            start:this.data.movies.length,
+            count:12
+          },
+          success:(res)=>{
+            console.log(res)  
+            this.setData({
+              movies:this.data.movies.concat(res.data.subjects)
+            })
+          }
+        })   
     },
 
     /**
