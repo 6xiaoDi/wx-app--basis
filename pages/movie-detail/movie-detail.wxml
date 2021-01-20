@@ -1,5 +1,5 @@
 <view class="container">
-    <image class="head-img" src="{{movie.images.large}}"></image>
+    <image mode="aspectFill" class="head-img" src="{{movie.images.large}}"></image>
     <view class="head-img-hover">
         <text class="main-title">{{movie.title}}</text>
         <text class="sub-title">{{movie.countries[0]+'·'+movie.year}}</text>
