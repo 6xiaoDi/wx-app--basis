@@ -4,7 +4,8 @@
         "pages/news/news",
         "pages/news-detail/news-detail",
         "pages/movies/movies",
-        "pages/more-movies/more-movies"
+        "pages/more-movies/more-movies",
+        "pages/movie-detail/movie-detail"
     ],
     "window": {
         "navigationBarBackgroundColor": "#C22A1E"
@@ -34,6 +35,6 @@
         ]
     },
     "usingComponents": {
-        "movie":"/components/movie/index"
+        "movie": "/components/movie/index"
     }
 }

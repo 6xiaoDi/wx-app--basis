@@ -35,7 +35,7 @@ Page({
         //     console.log(v.data);
         // })
 
-        console.log(flag.data);
+        // console.log(flag.data);
 
         this.setData({
             postList
