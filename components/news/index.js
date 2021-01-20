@@ -18,7 +18,7 @@ Component({
      */
     methods: {
         onTap(event){
-            const pid = event.currentTarget.dataset.postId
+            const pid = this.properties.res.postId
             this.triggerEvent("news-tap",{
                 pid
             })
