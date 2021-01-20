@@ -1,3 +1,3 @@
-<movies-list movies="{{inTheaters}}" title="正在热映" f-class="movie-list"></movies-list>
-<movies-list movies="{{comingSoon}}" title="即将上映" f-class="movie-list"></movies-list>
-<movies-list movies="{{top250}}" title="豆瓣Top250" f-class="movie-list"></movies-list>
+<movies-list data-type="in_theaters" bind:tap="onGotoMore" movies="{{inTheaters}}" title="正在热映" f-class="movie-list"></movies-list>
+<movies-list data-type="coming_soon" bind:tap="onGotoMore" movies="{{comingSoon}}" title="即将上映" f-class="movie-list"></movies-list>
+<movies-list data-type="top250" bind:tap="onGotoMore" movies="{{top250}}" title="豆瓣Top250" f-class="movie-list"></movies-list>
