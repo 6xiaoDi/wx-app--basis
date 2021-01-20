@@ -1,8 +1,8 @@
 <view class="container">
     <image class="head-img" src="{{movie.images.large}}"></image>
-    <view>
-        <text class="main-title"></text>
-        <text class="sub-title"></text>
+    <view class="head-img-hover">
+        <text class="main-title">{{movie.title}}</text>
+        <text class="sub-title">{{movie.countries[0]+'·'+movie.year}}</text>
         <view>
             <text class="highlight-font">{{movie.wish_count}}</text>
             <text class="plain-font">人喜欢</text>
