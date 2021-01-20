@@ -2,5 +2,6 @@
   "usingComponents": {
     "movie":"/components/movie/index"
   },
-  "enablePullDownRefresh":true
+  "enablePullDownRefresh":true,
+  "navigationBarTitleText":"正在热映"
 }
