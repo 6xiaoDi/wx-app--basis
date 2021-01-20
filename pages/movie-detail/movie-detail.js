@@ -6,7 +6,7 @@ Page({
      * 页面的初始数据
      */
     data: {
-
+        movie:{}
     },
 
     /**
@@ -17,7 +17,10 @@ Page({
         wx.request({
             url: app.gBaseUrl + 'subject/' + mid,
             success:(res)=>{
-              console.log(res.data)
+                console.log(res.data)
+                this.setData({
+                    movie:res.data
+                })
             }
           })
     },

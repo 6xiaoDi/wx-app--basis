@@ -84,6 +84,12 @@
                     "pathName": "pages/more-movies/more-movies",
                     "query": "",
                     "scene": null
+                },
+                {
+                    "name": "pages/movie-detail/movie-detail",
+                    "pathName": "pages/movie-detail/movie-detail",
+                    "query": "mid=305",
+                    "scene": null
                 }
             ]
         }
