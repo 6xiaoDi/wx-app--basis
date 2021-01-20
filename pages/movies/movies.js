@@ -8,7 +8,9 @@ Page({
     data: {
         inTheaters:[],
         comingSoon:[],
-        top250:[]
+        top250:[],
+        searchResult:false,
+        searchData:[]
     },
 
     /**
@@ -58,6 +60,30 @@ Page({
       const type = event.currentTarget.dataset.type
       wx.navigateTo({
         url: '/pages/more-movies/more-movies?type=' + type,
+      })
+    },
+
+    onConfirm(event) {
+      // console.log(event)
+      this.setData({
+        searchResult:true
+      })
+      wx.request({
+        url: app.gBaseUrl + 'search',
+        data:{
+          q:event.detail.value
+        },
+        success:(res)=>{
+          this.setData({
+            searchData:res.data.subjects
+          })
+        },
+      })
+    },
+
+    onSearchCancel(event){
+      this.setData({
+        searchResult:false
       })
     },
 

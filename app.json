@@ -32,5 +32,8 @@
                 "selectedIconPath": "/images/tab/dianying_hl.png"
             }
         ]
+    },
+    "usingComponents": {
+        "movie":"/components/movie/index"
     }
 }
