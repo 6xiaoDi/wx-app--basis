@@ -43,16 +43,17 @@ Page({
     },
 
     onToDetail:function (event){
+        const pid = event.currentTarget.dataset.postId | event.detail.pid
         wx.navigateTo({
-          url: '/pages/news-detail/news-detail?pid=' + event.detail.pid,
+          url: '/pages/news-detail/news-detail?pid=' + pid,
         })
     },
 
-    onGoToDetail(e){
-        wx.navigateTo({
-            url: '/pages/news-detail/news-detail?pid=' + e.currentTarget.dataset.postId,
-        })
-    },
+    // onGoToDetail(e){
+    //     wx.navigateTo({
+    //         url: '/pages/news-detail/news-detail?pid=' + e.currentTarget.dataset.postId,
+    //     })
+    // },
 
     /**
      * 生命周期函数--监听页面初次渲染完成

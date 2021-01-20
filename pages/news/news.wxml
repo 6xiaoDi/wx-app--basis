@@ -1,13 +1,13 @@
 <view>
     <swiper  interval="3000" indicator-dots autoplay vertical="{{false}}" circular>
         <swiper-item>
-            <image data-post-id="3" bind:tap="onGoToDetail" src="/images/bestplayers.png"></image>
+            <image data-post-id="3" bind:tap="onToDetail" src="/images/bestplayers.png"></image>
         </swiper-item>
         <swiper-item>
-            <image data-post-id="0" bind:tap="onGoToDetail" src="/images/lpl.png"></image>
+            <image data-post-id="0" bind:tap="onToDetail" src="/images/lpl.png"></image>
         </swiper-item>
         <swiper-item>
-            <image data-post-id="4" bind:tap="onGoToDetail" src="/images/jumpfly.png"></image>
+            <image data-post-id="4" bind:tap="onToDetail" src="/images/jumpfly.png"></image>
         </swiper-item>
     </swiper>
 
