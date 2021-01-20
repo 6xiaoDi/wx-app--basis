@@ -17,6 +17,11 @@ Component({
      * 组件的方法列表
      */
     methods: {
-
+        onToDetail:function (event){
+            const pid = event.currentTarget.dataset.postId
+            wx.navigateTo({
+              url: '/pages/news-detail/news-detail?pid=' + pid,
+            })
+        },
     }
 })

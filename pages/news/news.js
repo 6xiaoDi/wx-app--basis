@@ -42,13 +42,6 @@ Page({
         });
     },
 
-    onToDetail:function (event){
-        const pid = event.currentTarget.dataset.postId
-        wx.navigateTo({
-          url: '/pages/news-detail/news-detail?pid=' + pid,
-        })
-    },
-
     /**
      * 生命周期函数--监听页面初次渲染完成
      */
