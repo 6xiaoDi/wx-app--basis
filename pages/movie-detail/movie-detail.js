@@ -25,6 +25,13 @@ Page({
           })
     },
 
+    onViewPost(event){
+        wx.previewImage({
+          urls: [this.data.movie.images.large],
+        })
+    },
+    
+
     /**
      * 生命周期函数--监听页面初次渲染完成
      */
