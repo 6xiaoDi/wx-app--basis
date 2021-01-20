@@ -69,6 +69,7 @@ Page({
      * 页面上拉触底事件的处理函数
      */
     onReachBottom: function () {
+      wx.showNavigationBarLoading()
       wx.request({
           url: app.gBaseUrl + this.data._type,
           data:{
@@ -80,6 +81,7 @@ Page({
             this.setData({
               movies:this.data.movies.concat(res.data.subjects)
             })
+            wx.hideNavigationBarLoading()
           }
         })   
     },
