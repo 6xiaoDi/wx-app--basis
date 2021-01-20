@@ -18,4 +18,9 @@ page{
     padding: 30rpx 28rpx;
     justify-content: space-between;
 }
+
+.search-container::after{
+    content:'';
+    width:200rpx;
+  }
   
