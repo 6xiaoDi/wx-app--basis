@@ -25,7 +25,7 @@
         </view>
         <view class="flex-row">
             <text class="mark">导演</text>
-            <text>{{movie.director}}</text>
+            <text>{{movie.directors}}</text>
         </view>
         <view class="flex-row">
             <text class="mark">影人</text>
@@ -36,4 +36,6 @@
             <text>{{movie.genres}}</text>
         </view>
     </view>
+
+    <view class="hr"></view>
 </view>
