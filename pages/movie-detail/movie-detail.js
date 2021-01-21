@@ -1,5 +1,5 @@
 // pages/movie-detail/movie-detail.js
-import {convertToCastString} from '../../utils/util.js'
+import {convertToCastString, convertToCastInfos} from '../../utils/util.js'
 const app = getApp()
 Page({
 
@@ -46,6 +46,7 @@ Page({
         data.average = movie.rating.average                       // 评分
         data.genres = movie.genres.join('、')                     // 电影类型
         data.summary = movie.summary                              // 剧情简介
+        data.castsInfo = convertToCastInfos(movie.casts)          // 影人头像数据
         this.setData({
           movie:data
         })
