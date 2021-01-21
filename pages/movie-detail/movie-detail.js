@@ -45,6 +45,7 @@ Page({
         data.rating = movie.rating.stars/10                       // 星级
         data.average = movie.rating.average                       // 评分
         data.genres = movie.genres.join('、')                     // 电影类型
+        data.summary = movie.summary                              // 剧情简介
         this.setData({
           movie:data
         })

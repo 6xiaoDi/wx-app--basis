@@ -104,3 +104,22 @@
     height: 1px;
     background-color: #d9d9d9;
 }
+
+.synopsis{
+    margin-left:40rpx;
+    display:flex;
+    flex-direction: column;
+    margin-top: 50rpx;
+}
+
+.synopsis-font{
+    color:#999;
+}
+  
+.summary-content{
+    margin-top: 20rpx;
+    margin-right: 40rpx;
+    line-height:40rpx;
+    letter-spacing: 1px;
+}
+  
