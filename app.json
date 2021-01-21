@@ -35,6 +35,7 @@
         ]
     },
     "usingComponents": {
-        "movie": "/components/movie/index"
+        "movie": "/components/movie/index",
+        "l-rate":"/miniprogram_npm/lin-ui/rate/index"
     }
 }
